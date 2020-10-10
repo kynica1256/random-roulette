@@ -1,0 +1,115 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+	<title>Рулетка</title>
+	<script type="text/javascript" src="{{ url_for('static', filename='code.js') }}"></script>
+</head>
+<body>
+	<div id='spown'></div>
+	<div class='head'></div>
+	<div class='show'>
+		<div class='result'>
+			<div class='straight'></div>
+			<div class='res'>
+			</div>
+		</div>
+		<button id='cl' class='click'>Click</button>
+	</div>
+</body>
+<style type="text/css">
+	body {
+		background-color: #232F52;
+		z-index: 2;
+	}
+	.show {
+		z-index: 10;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+	}
+	.result {
+		box-shadow: inset 0 0 10px;
+		border-radius: 10px 0 0 10px;
+		position: relative;
+		width: 400px;
+		height: 120px;
+		overflow: hidden;
+		border: 2px solid black;
+		background-color: white;
+	}
+	.res {
+		position: absolute;
+		display: inline-flex;
+		align-items: center;
+		width: 1500px;
+		height: 100px;
+	}
+	.click {
+		position: relative;
+		z-index: 2;
+		background-color: #0AC216;
+		color: white;
+		font-size: 20px;
+		border: 2px solid #0AC216;
+		border-radius: 0 10px 10px 0;
+	}
+	.straight {
+		width: 0; 
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #79849B;
+		margin-left: 200px;
+	}
+	.style {
+		font-family: Tahoma;
+		border: 1px solid black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+		width: 90px;
+	}
+	.black {
+		font-family: Tahoma;
+		font-size: 30px;
+		border: 1px solid black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color:white;
+		height: 90px;
+		width: 90px;
+		background-color: black;
+	}
+	#gif {
+		position: fixed;
+		margin-top:10%;
+	}
+	.none {
+		display: none;
+	}
+	.style_1 {
+		position: fixed;
+		border-radius:40%;
+		z-index: 11;
+		left: 50%;
+		top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+	}
+</style>
+</html>
