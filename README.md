@@ -1,5 +1,5 @@
 # random-roulette
 random-roulette
 <hr>
-<h2>Installetion</h2><br>
+<h2>Installation</h2><br>
 <hr>
